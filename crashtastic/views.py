@@ -12,9 +12,9 @@ def index(request):
 
 def db(request):
 
-    greeting = Greeting()
-    greeting.save()
+    hello = Hello()
+    hello.save()
 
-    greetings = Greeting.objects.all()
+    hellos = Hello.objects.all()
 
-    return render(request, "db.html", {"greetings": greetings})
+    return render(request, "db.html", {"hellos": hellos})
