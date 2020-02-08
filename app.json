@@ -11,6 +11,14 @@
         "generator": "secret"
       }
     },
+    "buildpacks": [
+      {
+        "url": "https://git.heroku.com/crashtastical.git"
+      },
+      {
+        "url": "heroku/python"
+      }
+    ],
     "environments": {
       "test": {
         "scripts": {
